@@ -8,7 +8,7 @@
 </head>
 <body>
     <h2>Đăng nhập</h2>
-    <form action="" method="post">
+    <form action="add_product.html" method="post" >
         <label for="username">Tên người dùng:</label><br>
         <input type="text" id="username" name="username"><br>
         <label for="password">Mật khẩu:</label><br>
