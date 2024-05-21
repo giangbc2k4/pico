@@ -1,5 +1,5 @@
 <?php
-// Thông tin kết nối đến cơ sở dữ liệu
+
 $servername = "localhost"; // Tên máy chủ
 $username = "admin"; // Tên người dùng
 $password = "root"; // Mật khẩu

@@ -1,3 +1,7 @@
+<?php
+session_start(); // Bắt đầu phiên làm việc
+?>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -12,6 +16,14 @@
 
 </head>
     <body>
+
+    <?php
+ 
+require_once('./database/function.php');
+
+
+?>
+
     <div id="fist-header">
         <img src="./assets/img/Slide.gif" alt="">
     </div>
@@ -28,7 +40,21 @@
         <div class="main col">
             <a href="">Tra cứu đơn hàng</a>
             <a href="">Giỏ hàng</a>
-            <a href="login.php">Đăng nhập</a>
+
+ <?php
+ // Kiểm tra xem người dùng đã đăng nhập hay chưa
+ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+     // Nếu đã đăng nhập, ẩn nút đăng nhập và hiển thị nút khác
+     echo '<a href="logout.php">Dăng xuất</a>';
+ } else {
+     // Nếu chưa đăng nhập, hiển thị nút đăng nhập
+     echo '<a href="login.php">Đăng nhập</a>';
+ }
+ ?>
+ 
+ 
+ 
+           
         </div>
     </div>
 
@@ -80,7 +106,7 @@
     </div>
 </div>
 <?php
-require_once('connect.php');
+require_once('./database/function.php');
 
 
 

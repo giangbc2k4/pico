@@ -1,5 +1,5 @@
 <?php
-require_once('connect.php');
+require_once('function.php');
 
 // Lấy dữ liệu từ form
 $masanpham = $_POST['masanpham'];
