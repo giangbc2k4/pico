@@ -3,7 +3,7 @@
 $servername = "localhost"; // Tên máy chủ
 $username = "admin"; // Tên người dùng
 $password = "root"; // Mật khẩu
-$database = "qlsv"; // Tên cơ sở dữ liệu
+$database = "shoppico"; // Tên cơ sở dữ liệu
 
 // Tạo kết nối
 $conn = new mysqli($servername, $username, $password, $database);

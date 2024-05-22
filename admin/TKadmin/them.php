@@ -1,32 +1,34 @@
 
 <div class="form-container">
           <form action="/submit-product" method="post" enctype="multipart/form-data">
-              <h2>Thông Tin Sản Phẩm</h2>
+              <h2>Thông Tin Tài Khoản</h2>
   
-              <label for="idSanPham">ID Sản Phẩm:</label>
-              <input type="text" id="idSanPham" name="idSanPham" required>
+              
+              <label for="username">Tên Đăng Nhập:</label>
+              <input type="text" id="username" name="username" required>
   
-              <label for="tenSanPham">Tên Sản Phẩm:</label>
-              <input type="text" id="tenSanPham" name="tenSanPham" required>
+              <label for="matkhau">Mật Khẩu:</label>
+              <input type="matkhau" id="matkhau" name="matkhau"  required>
+              <label for="sdt">Số điện thoại:</label>
+              <input type="sdt" id="sdt" name="sdt" required>
   
-              <label for="anhSanPham">Ảnh Sản Phẩm:</label>
-              <input type="file" id="anhSanPham" name="anhSanPham" accept="image/*" required>
-  
-              <label for="giaSanPham">Giá Sản Phẩm:</label>
-              <input type="number" id="giaSanPham" name="giaSanPham" required>
-  
-              <label for="motaSanPham">Mô Tả Sản Phẩm:</label>
-              <textarea id="motaSanPham" name="motaSanPham" rows="4" required></textarea>
-  
-              <label for="phanLoaiSanPham">Phân Loại Sản Phẩm:</label>
-              <select id="phanLoaiSanPham" name="phanLoaiSanPham" required>
-                  <option value="category1">Category 1</option>
-                  <option value="category2">Category 2</option>
-                  <option value="category3">Category 3</option>
+             <br>
+              <label for="Role">Role:</label>
+              <select id="role" name="role" required>
+                  <option value="1">admin</option>
+                  <option value="0">user</option>
+            
               </select>
   
               <button type="submit">Gửi</button>
           </form>
       </div>
  
+<?php 
+include("../database/config.php");
+$sql = ""
+
+
+?>
+
  

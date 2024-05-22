@@ -42,11 +42,15 @@
                                     </form>
                                   </td>";
                             echo "<td>
-                                    <button class='btn btn-edit'>
-                                        <span class='mdi mdi-pencil mdi-24px'></span>
-                                        <span>Sửa</span>
-                                    </button>
-                                  </td>";
+                            <form action='SP/xuly.php' method='post' onsubmit='return confirm(\"Bạn có chắc chắn muốn xoá sản phẩm này không?\");'>
+                            <input type='hidden' name='idSanPham' value='" . $row["id"] . "'>
+                            <button type='submit' name= 'sua' class='btn btn-delete'>
+                                <span class='mdi mdi-delete mdi-24px'></span>
+                                <span class='mdi mdi-delete-empty mdi-24px'></span>
+                                <span>Sửa</span>
+                            </button>
+                        </form>
+                      </td>";
                             echo "</tr>";
                         }
                     } else {
